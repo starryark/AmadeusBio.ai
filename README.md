@@ -23,6 +23,17 @@ git clone [https://github.com/starryark/AmadeusBio.ai_mvp.git](https://github.co
 claude --plugin-dir ./AmadeusBio.ai_mvp
 ```
 
+### PyMOL side (one-time, only if you use the PyMOL agent)
+
+The `pymol-molecular-visualization` skill talks to a live PyMOL session over `localhost:9876`. Install the PyMOL-side plugin once:
+
+1. Open PyMOL → `Plugin` → `Plugin Manager` → `Install New Plugin`.
+2. Select the `pymol-mcp-socket-plugin/` directory in this repo.
+3. Restart PyMOL. Verify with `pymol -d "mcp_start"` from a terminal.
+
+See [PyMol-Integration](https://www.google.com/search?q=/docs/PyMol-Integration) for full PATH/wrapper setup on Windows/macOS/Linux.
+
+
 #### Credits
 
 *Skills used from:* <https://github.com/jaechang-hits/SciAgent-Skills.git>
